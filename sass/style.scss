@@ -1,0 +1,94 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing:border-box;
+}
+.header{
+    height: auto;
+    background-color: rgb(17, 13, 13);
+    .container{
+        width: 100%;
+        max-width: 1400px;
+        margin: 0% auto;
+    }
+    .header__container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .header__search{
+            input{
+                outline: none;
+                margin: 10px;
+                width: 350px;
+                padding: 6px;
+                background-color: rgb(44, 43, 43);
+                border: none;
+                &::placeholder{
+                    color: white;
+                }
+            }
+        }
+        section{
+            width: 250px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 20px;
+            .lang{
+                
+                padding: 2px;
+                padding-left: 15px;
+                border: 1px solid white;
+                a{
+                    text-decoration: none;
+                    color: white;
+                    // font-size: 20px;
+                }
+            }
+            .menu{
+                padding: 2px;
+                padding-left: 15px;
+                border: 1px solid white;
+                a{
+                    text-decoration: none;
+                    color: white;
+                    // font-size: 20px;
+                }
+            }
+            .sing-up{
+                padding: 2px;
+                padding-left: 10px;
+                background-color: rgb(180, 180, 32);
+                // border: 1px solid white;
+                a{
+                    text-decoration: none;
+                    color: black;
+                    // font-size: 20px;
+                }
+            }
+        }
+       
+    }
+}
+@media screen and (max-width:1200px){
+    
+    .header{
+        .container{
+            max-width: 1000px;
+        }
+        .header__container{
+          
+           .header__search{
+              input{
+                width: auto;
+              }
+           }
+            .header__logo{
+                margin-left: 0;
+            }
+            .section{
+                width: auto;
+            }
+        }
+    }
+}
